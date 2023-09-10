@@ -67,18 +67,23 @@ fun HomeScreen(
                 .background(Dark500),
             contentAlignment = Alignment.Center,
         ) {
-            TextField(value = city, onValueChange = {
-                setCity(it)
-            }, colors = TextFieldDefaults.textFieldColors(
-                unfocusedIndicatorColor = Color.Transparent,
-                focusedIndicatorColor = Color.Transparent,
-                errorIndicatorColor = Color.Transparent,
-                disabledIndicatorColor = Color.Transparent,
-                textColor = Color.White,
-                placeholderColor = Color.Gray
-            ), placeholder = {
-                Text("City")
-            })
+            TextField(
+                value = city,
+                onValueChange = {
+                    setCity(it)
+                },
+                colors = TextFieldDefaults.textFieldColors(
+                    unfocusedIndicatorColor = Color.Transparent,
+                    focusedIndicatorColor = Color.Transparent,
+                    errorIndicatorColor = Color.Transparent,
+                    disabledIndicatorColor = Color.Transparent,
+                    textColor = Color.White,
+                    placeholderColor = Color.Gray,
+                ),
+                placeholder = {
+                    Text("City")
+                },
+            )
         }
         Spacer(modifier = Modifier.height(32.dp))
     }
