@@ -27,7 +27,7 @@ data class Location(
     @SerializedName("GeoPosition")
     val geoPosition:Position,
     @SerializedName("IsAlias")
-    val isAlias:Boolean
+    val isAlias:Double
 )
 
 data class Position(
